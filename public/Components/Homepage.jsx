@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Col, Container, Row , } from 'react-bootstrap'
 import Home from "../Images/Homepage.jpeg"
 import { LinkContainer } from 'react-router-bootstrap'
+import { Link } from 'react-router-dom'
 
 const Homepage = () => {
   return (
@@ -61,18 +62,21 @@ const Homepage = () => {
               justifyContent:"space-evenly",
             }}
             >
-              <LinkContainer to="/services">
-                <Button
-                  style={{
-                    backgroundColor:"#041E42"
-                  }}
-                >View all Services</Button>
+              <LinkContainer to="/services"
+                 style={{
+                  backgroundColor:"#ff914d",
+                  border:"1px solid #ff914d",
+                }}
+              >
+                <Button>
+                  View all Services</Button>
               </LinkContainer>
+
               <Button
                 style={{
                   padding:".5rem",
                   color:"#FFFFFB",
-                  backgroundColor:"#041E42",
+                  backgroundColor:"#004aad",
                   border:"0"
                 }}
               >View all Services</Button>
@@ -160,17 +164,19 @@ const Homepage = () => {
                   <p style={{ textAlign: "left" }}>
                     Clave Technologies offers comprehensive website development, delivering responsive, SEO-optimized, and user-friendly sites. We use modern technologies to create fast, secure websites tailored to your business, ensuring long-term success and scalability.
                   </p>
-                  <Button
-                    style={{
-                      paddingBlock: ".5rem",
-                      paddingInline: "1rem",
-                      color: "#FFFFFB",
-                      backgroundColor: "#ff914d",
-                      border: "0",
-                    }}
-                  >
-                    Read More
-                  </Button>
+                  <Link to="/services">
+                    <Button
+                      style={{
+                        paddingBlock: ".5rem",
+                        paddingInline: "1rem",
+                        color: "#FFFFFB",
+                        backgroundColor: "#ff914d",
+                        border: "0",
+                      }}
+                    >
+                      Read More
+                    </Button>
+                  </Link>
                 </Col>
 
                 <Col md={3}
@@ -184,17 +190,19 @@ const Homepage = () => {
                   <p style={{ textAlign: "left" }}>
                     Clave Technologies offers comprehensive website development, delivering responsive, SEO-optimized, and user-friendly sites. We use modern technologies to create fast, secure websites tailored to your business, ensuring long-term success and scalability.
                   </p>
-                  <Button
-                    style={{
-                      paddingBlock: ".5rem",
-                      paddingInline: "1rem",
-                      color: "#FFFFFB",
-                      backgroundColor: "#ff914d",
-                      border: "0",
-                    }}
-                  >
-                    Read More
-                  </Button>
+                  <Link to="/services">
+                    <Button
+                      style={{
+                        paddingBlock: ".5rem",
+                        paddingInline: "1rem",
+                        color: "#FFFFFB",
+                        backgroundColor: "#ff914d",
+                        border: "0",
+                      }}
+                    >
+                      Read More
+                    </Button>
+                  </Link>
                 </Col>
                 
                 <Col md={3}
@@ -208,17 +216,19 @@ const Homepage = () => {
                   <p style={{ textAlign: "left" }}>
                     Clave Technologies offers comprehensive website development, delivering responsive, SEO-optimized, and user-friendly sites. We use modern technologies to create fast, secure websites tailored to your business, ensuring long-term success and scalability.
                   </p>
-                  <Button
-                    style={{
-                      paddingBlock: ".5rem",
-                      paddingInline: "1rem",
-                      color: "#FFFFFB",
-                      backgroundColor: "#ff914d",
-                      border: "0",
-                    }}
-                  >
-                    Read More
-                  </Button>
+                  <Link to="/services">
+                    <Button
+                      style={{
+                        paddingBlock: ".5rem",
+                        paddingInline: "1rem",
+                        color: "#FFFFFB",
+                        backgroundColor: "#ff914d",
+                        border: "0",
+                      }}
+                    >
+                      Read More
+                    </Button>
+                  </Link>
                 </Col>
               </Row>
             
@@ -228,19 +238,20 @@ const Homepage = () => {
                 padding: "1rem",
                 display: "flex",
                 justifyContent: "flex-end",
+                paddingRight:"4rem"
               }}
             >
-              <LinkContainer to="/services">
-                <Button
-                  style={{
-                    paddingBlock: ".5rem",
-                    paddingInline: ".8rem",
-                    color: "#FFFFFB",
-                    backgroundColor: "#ff914d",
-                    border: "0",
-                    width: "6rem",
-                  }}
-                >
+              <LinkContainer to="/services"
+                style={{
+                  paddingBlock: ".5rem",
+                  paddingInline: ".8rem",
+                  color: "#FFFFFB",
+                  backgroundColor: "#ff914d",
+                  border: "0",
+                  width: "6rem",
+                }}
+              >
+                <Button>
                   View All
                 </Button>
               </LinkContainer>
@@ -319,20 +330,21 @@ const Homepage = () => {
             <div 
               style={{
                 padding: "1rem",
-                textAlign: "right" // Aligns button to the right
+                textAlign: "right" ,
+                paddingRight:"4rem"
               }}
             >
-              <LinkContainer to="/products">
-                <Button
-                  style={{
-                    paddingBlock: ".5rem",
-                    paddingInline: ".8rem",
-                    color: "#FFFFFB",
-                    backgroundColor: "#CB6015",
-                    border: "0",
-                    width: "6rem",
-                  }}
-                >
+              <LinkContainer to="/products"
+                style={{
+                  paddingBlock: ".5rem",
+                  paddingInline: ".8rem",
+                  color: "#FFFFFB",
+                  backgroundColor: "#ff914d",
+                  border: "0",
+                  width: "6rem",
+                }}
+              >
+                <Button>
                   View All
                 </Button>
               </LinkContainer>

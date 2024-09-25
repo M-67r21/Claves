@@ -83,7 +83,7 @@ function Header() {
                     </Nav.Link>
             </LinkContainer>
 
-            <Nav.Link href="/"
+            <Nav.Link href="/contact"
                style={{
                 color: "white",
                 fontSize: "1rem",
