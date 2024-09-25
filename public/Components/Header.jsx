@@ -83,8 +83,8 @@ function Header() {
                     </Nav.Link>
             </LinkContainer>
 
-            <Nav.Link href="/contact"
-               style={{
+            <LinkContainer to="/contact" 
+              style={{
                 color: "white",
                 fontSize: "1rem",
                 fontWeight: "700",
@@ -94,8 +94,11 @@ function Header() {
                 width:"8rem",
               }}
             >
-              Get a Qoute 
-            </Nav.Link>
+              <Nav.Link>
+                Get a Qoute 
+              </Nav.Link>
+            </LinkContainer>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>
